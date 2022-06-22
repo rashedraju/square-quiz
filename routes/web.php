@@ -26,12 +26,7 @@ Route::get( '/register', function () {
 } )->name( 'register' );
 
 Route::post( '/register', function ( Request $request ) {
-    $attrs = $request->validate( [
-        'name'  => 'required',
-        'email' => 'required',
-        'phone' => 'required'
-    ] );
-    $user = User::create( $attrs );
+    $user = User::create( $request->only( ['name', 'email', 'phone'] ) );
 
     $next_q = Qus::inRandomOrder()->take( 3 )->get()->map( fn( $q ) => $q->id )->toArray();
 

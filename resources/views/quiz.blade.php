@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square</title>
+    <title>Square Pharmaceuticals Ltd Bangladesh</title>
+    <link rel="shortcut icon" href="{{ asset('/assets/images/brands/10.png') }}" type="image/x-icon">
     <!-- FontAwesome-cdn include -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Google fonts include -->
@@ -22,15 +23,15 @@
     <div class="wrapper position-relative">
         <div class="container-fluid">
             <div class="row py-3">
-                <div class="row py-3" style="height: 20%">
+                <div class="row py-3 logo_wrapper" style="height: 20%">
                     <div class="col-12 d-flex justify-content-between">
                         <div class="logo_area">
                             <img src="{{ asset('/assets/images/brands/09.png') }}" alt="image-not-found"
-                                style="width: 13rem;">
+                                style="width: 13rem;" class="brand_2">
                         </div>
                         <div class="logo_area">
                             <a href="{{ route('home') }}"><img src="{{ asset('/assets/images/brands/10.png') }}"
-                                    alt="image-not-found" style="width: 4.5rem;"></a>
+                                    alt="image-not-found" style="width: 4.5rem;" class="brand_1"></a>
                         </div>
                     </div>
                 </div>
@@ -44,23 +45,16 @@
                             <h5>Time start</h5>
                         </div>
                         <h3 class="count_number rounded-pill bg-white overflow-hidden text-center countdown_timer"
-                            id="count_down_timer">60
+                            id="count_down_timer">30
                         </h3>
                     </div>
-                </div>
-                <!-- Step-progress-bar -->
-                <div class="progress_bar d-flex">
-                    <div class="step active current"></div>
-                    <div class="step"></div>
-                    <div class="step"></div>
-                    <div class="step"></div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <!------------------------- Step-1 ----------------------------->
-                <form class="multisteps_form" id="wizard" method="POST" action="{{ route('quiz.store') }}">
+                <form class="multisteps_form pb-5" id="wizard" method="POST" action="{{ route('quiz.store') }}">
                     @csrf
                     <input type="hidden" name="user" value="{{ $user->id }}">
                     <input type="hidden" name="qus_no" value="{{ $qus->id }}">
@@ -73,8 +67,9 @@
                             <div class="question_number text-uppercase mb-3 text-center fw-bold">QUESTION
                                 {{ $curQNo }}/{{ $totalNoQus }}</div>
                             <div class="progress rounded-pill">
-                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: {{ (100 / 3) * $curQNo }}%;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="multisteps_form_panel active">
@@ -122,17 +117,14 @@
                                         @if ($next_q == '')
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
-                                                id="nextBtn">Submit <span><i
-                                                        class="fas fa-arrow-left"></i></span></button>
+                                                id="nextBtn">Submit</button>
                                         @else
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
-                                                id="nextBtn">Submit <span><i
-                                                        class="fas fa-arrow-left"></i></span></button>
+                                                id="nextBtn">Submit</button>
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
-                                                id="nextBtn">Next Question <span><i
-                                                        class="fas fa-arrow-right"></i></span></button>
+                                                id="nextBtn">Next Question</button>
                                         @endif
                                     </div>
                                 </div>
@@ -146,7 +138,11 @@
 
     <script>
         // Set the date we're counting down to
-        var distance = 60;
+        var distance = 30;
+        var opt1 = document.getElementById('opt_1')
+        var opt2 = document.getElementById('opt_2')
+        var opt3 = document.getElementById('opt_3')
+        var selected_ans = document.getElementById('selected_ans')
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -156,36 +152,41 @@
             document.getElementById("count_down_timer").innerHTML = distance;
 
             // If the count down is finished, write some text
-            if (distance < 0) {
+            if (distance <= 0) {
                 clearInterval(x);
                 document.getElementById("count_down_timer").innerHTML = "00";
+                document.getElementById("nextBtn").classList.add('d-none');
+
+                opt1.style.cursor = "not-allowed";
+                opt2.style.cursor = "not-allowed";
+                opt3.style.cursor = "not-allowed";
             }
         }, 1000);
 
-
-        var opt1 = document.getElementById('opt_1')
-        var opt2 = document.getElementById('opt_2')
-        var opt3 = document.getElementById('opt_3')
-        var selected_ans = document.getElementById('selected_ans')
-
         opt1.addEventListener('click', function() {
-            opt1.classList.add('active');
-            opt2.classList.remove('active');
-            opt3.classList.remove('active');
-            selected_ans.value = 1;
+            if (distance > 0) {
+                opt1.classList.add('active');
+                opt2.classList.remove('active');
+                opt3.classList.remove('active');
+                selected_ans.value = 1;
+            }
         })
 
         opt2.addEventListener('click', function() {
-            opt1.classList.remove('active');
-            opt2.classList.add('active');
-            opt3.classList.remove('active');
-            selected_ans.value = 2;
+            if (distance > 0) {
+                opt1.classList.remove('active');
+                opt2.classList.add('active');
+                opt3.classList.remove('active');
+                selected_ans.value = 2;
+            }
         })
         opt3.addEventListener('click', function() {
-            opt1.classList.remove('active');
-            opt2.classList.remove('active');
-            opt3.classList.add('active');
-            selected_ans.value = 3;
+            if (distance > 0) {
+                opt1.classList.remove('active');
+                opt2.classList.remove('active');
+                opt3.classList.add('active');
+                selected_ans.value = 3;
+            }
         })
     </script>
 </body>

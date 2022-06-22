@@ -21,15 +21,15 @@
 <body>
     <div class="wrapper position-relative">
         <div class="container-lg" style="height: 80vh">
-            <div class="row py-3" style="height: 20%">
+            <div class="row py-3 logo_wrapper" style="height: 20%">
                 <div class="col-12 d-flex justify-content-between">
                     <div class="logo_area">
                         <img src="{{ asset('/assets/images/brands/09.png') }}" alt="image-not-found"
-                            style="width: 13rem;">
+                            style="width: 13rem;" class="brand_2">
                     </div>
                     <div class="logo_area">
                         <a href="{{ route('home') }}"><img src="{{ asset('/assets/images/brands/10.png') }}"
-                                alt="image-not-found" style="width: 4.5rem;"></a>
+                                alt="image-not-found" style="width: 4.5rem;" class="brand_1"></a>
                     </div>
                 </div>
             </div>
@@ -46,8 +46,16 @@
                         <input type="text" name="phone" class="form-control py-2"
                             style="text-align: left!important" placeholder="Phone Number">
 
-                        <button type="submit" class="f_btn text-white rounded-pill text-uppercase shadow-none"> Start
-                        </button>
+                        <div class="d-flex gap-3 pt-5">
+                            <button type="submit"
+                                class="f_btn text-white rounded-pill text-uppercase shadow-none bg-white"
+                                style="color: #000!important">
+                                Skip
+                            </button>
+                            <button type="submit" class="f_btn text-white rounded-pill text-uppercase shadow-none">
+                                Start
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>

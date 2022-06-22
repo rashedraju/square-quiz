@@ -1,4 +1,3 @@
-
 .pinkLady {
     background-color: #f8d5b3;
 }
@@ -386,6 +385,7 @@
     margin: 0 auto;
 }
 .form_btn a {
+    text-align: center;
     color: #ffffff !important;
 }
 .form_btn a:hover {
@@ -400,9 +400,8 @@
     border: none;
     background-color: #004e7f;
     text-transform: uppercase;
-    -webkit-box-shadow: -20px 0 0px -2px #035cda;
-    box-shadow: -20px 0 0px -2px #035cda;
     z-index: 2;
+    flex-grow: 1;
 }
 .f_btn:hover {
     color: #000000 !important;
@@ -468,6 +467,27 @@ h6 {
 img {
     height: auto;
     max-width: 100%;
+}
+
+.brand_img_wrapper {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.brand_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 2rem;
+}
+
+.brand_2 {
+    background: #fff;
+    padding: 1.5rem 2rem;
 }
 
 @-webkit-keyframes upDown {
@@ -679,7 +699,7 @@ button {
     }
 
     .f_btn {
-        font-size: 0.6rem;
+        font-size: 1rem;
         font-weight: 500;
         padding: 1rem 2rem;
     }
@@ -712,4 +732,108 @@ button {
     margin: 2rem;
     background-color: #ffffff;
     border-radius: 2rem;
+}
+
+@media screen and (min-width: 1079px) and (min-height: 1919px) {
+    .brand_1 {
+        width: 10rem !important;
+    }
+
+    .brand_2 {
+        width: 27rem !important;
+        padding: 3rem 2rem !important;
+    }
+
+    .logo_wrapper {
+        padding-top: 5rem !important;
+    }
+
+    .col-sm-6 {
+        width: 100% !important;
+    }
+
+    .brand_img img {
+        padding: 2rem !important;
+        width: 20rem !important;
+    }
+
+    .my-5 {
+        margin: 5rem 0 !important;
+    }
+
+    .f_btn {
+        font-size: 2.5rem !important;
+        padding: 2rem 2rem !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .py-2 {
+        padding: 2rem !important;
+    }
+
+    .form-control {
+        font-size: 2.5rem !important;
+    }
+
+    .gap-3 {
+        gap: 2rem !important;
+    }
+
+    .count_box {
+        width: 35rem !important;
+        height: 10rem !important;
+    }
+
+    .count_clock img {
+        width: 10rem !important;
+    }
+    .count_title h4 {
+        font-size: 2.5rem !important;
+    }
+
+    .count_title h5 {
+        font-size: 2rem !important;
+    }
+
+    .count_number {
+        font-size: 3rem !important;
+    }
+
+    .question_number {
+        font-size: 3rem !important;
+        margin-top: 3rem !important;
+    }
+
+    .question_title h1 {
+        font-size: 2.6875rem !important;
+        padding: 2rem 1rem !important;
+    }
+
+    .form_items label {
+        font-size: 2.5rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .question_title .step {
+        margin-top: 6rem !important;
+    }
+
+    .question_title .step:after {
+        top: -108px !important;
+        height: 6rem !important;
+    }
+
+    .form_btn {
+        margin-top: 5rem !important;
+    }
+
+    .greetings_text {
+        font-size: 5rem !important;
+        margin: 5rem 0 !important;
+    }
+
+    .result_img img {
+        width: 40vw;
+    }
 }

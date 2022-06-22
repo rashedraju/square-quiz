@@ -21,69 +21,58 @@
 <body>
     <div class="wrapper position-relative">
         <div class="container-lg" style="height: 100vh">
-            <div class="row py-3" style="height: 20%">
+            <div class="row py-3 logo_wrapper">
                 <div class="col-12 d-flex justify-content-between">
                     <div class="logo_area">
                         <img src="{{ asset('/assets/images/brands/09.png') }}" alt="image-not-found"
-                            style="width: 13rem;">
+                            style="width: 13rem;" class="brand_2">
                     </div>
                     <div class="logo_area">
-                        <a href="{{ route('home') }}"><img src="{{ asset('/assets/images/brands/10.png') }}" alt="image-not-found"
-                            style="width: 4.5rem;"></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('/assets/images/brands/10.png') }}"
+                                alt="image-not-found" style="width: 4.5rem;" class="brand_1"></a>
                     </div>
                 </div>
             </div>
-            <div class="row py-3 d-flex flex-column justify-content-evenly align-items-center" style="height: 80%">
-                <div class="col-12 col-sm-6">
-                    <div class="row my-5">
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="row py-3 d-flex flex-column justify-content-evenly align-items-center">
+                <div class="col-12 col-sm-6 py-5">
+                    <div class="brand_img_wrapper">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/01.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/02.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/03.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
-                    </div>
-                    <div class="row my-5">
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/04.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
-                        <div class="col-4 d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('/assets/images/brands/10.png') }}" alt="image-not-found"
-                                style="width: 4rem;">
-                        </div>
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/05.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
-
-                    </div>
-
-                    <div class="row my-5">
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/06.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/07.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
-                        <div class="col-4 d-flex justify-content-center align-items-center">
+                        <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/08.png') }}" alt="image-not-found"
-                                style="width: 10rem;">
+                                style="width: 8rem;">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 text-center">
                     <a href="{{ route('register') }}"
-                        class="js-btn-next f_btn text-white rounded-pill text-uppercase">Let's play the quiz <span><i
-                                class="fas fa-arrow-left"></i></span></a>
+                        class="js-btn-next f_btn text-white rounded-pill text-uppercase">Let's play the quiz</a>
                 </div>
             </div>
         </div>
