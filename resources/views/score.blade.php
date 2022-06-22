@@ -19,6 +19,35 @@
     <!-- Main-StyleSheet include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/v3/style.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
+
+    <style>
+        @keyframes confettiRain {
+            0% {
+                opacity: 1;
+                margin-top: -100vh;
+                margin-left: -200px;
+            }
+
+            100% {
+                opacity: 1;
+                margin-top: 100vh;
+                margin-left: 200px;
+            }
+        }
+
+        .confetti {
+            opacity: 0;
+            position: absolute;
+            width: 1rem;
+            height: 1.5rem;
+            transition: 500ms ease;
+            animation: confettiRain 5s infinite;
+        }
+
+        #confetti-wrapper {
+            overflow: hidden !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,6 +69,8 @@
             </div>
         </div>
         <div class="container">
+            <div id="confetti-wrapper">
+            </div>
             <div class="row">
                 <div class="multisteps_form_panel active">
                     <!-- Form-content -->
@@ -64,6 +95,40 @@
             </div>
         </div>
     </div>
+
+    <script>
+        for (i = 0; i < 100; i++) {
+            // Random rotation
+            var randomRotation = Math.floor(Math.random() * 360);
+            // Random Scale
+            var randomScale = Math.random() * 1;
+            // Random width & height between 0 and viewport
+            var randomWidth = Math.floor(Math.random() * Math.max(document.documentElement.clientWidth, window.innerWidth ||
+                0));
+            var randomHeight = Math.floor(Math.random() * Math.max(document.documentElement.clientHeight, window
+                .innerHeight || 500));
+
+            // Random animation-delay
+            var randomAnimationDelay = Math.floor(Math.random() * 10);
+            console.log(randomAnimationDelay);
+
+            // Random colors
+            var colors = ['#0CD977', '#FF1C1C', '#FF93DE', '#5767ED', '#FFC61C', '#8497B0']
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+            // Create confetti piece
+            var confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.top = randomHeight + 'px';
+            confetti.style.right = randomWidth + 'px';
+            confetti.style.backgroundColor = randomColor;
+            // confetti.style.transform='scale(' + randomScale + ')';
+            confetti.style.obacity = randomScale;
+            confetti.style.transform = 'skew(15deg) rotate(' + randomRotation + 'deg)';
+            confetti.style.animationDelay = randomAnimationDelay + 's';
+            document.getElementById("confetti-wrapper").appendChild(confetti);
+        }
+    </script>
 </body>
 
 </html>
