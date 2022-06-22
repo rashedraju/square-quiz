@@ -70,12 +70,13 @@ Route::post( '/qus', function ( Request $request ) {
     if ( !$selected_ans ) {
 
         $cur_q = array_pop( $next_q );
-
         $next_q = implode( "_", $next_q );
 
-        if ( $next_q != "" ) {
+        if ( $cur_q ) {
+
             return redirect()->route( 'quiz', ['user' => $user->id, 'cur_q' => $cur_q, 'next_q' => $next_q] );
         }
+
         return redirect()->route( 'score', ['user' => $user->id] );
     } else if ( $selected_ans && $selected_ans == $cur_qus->ans ) {
         $user_ans = QuizAns::where( 'user_id', $request->user )->first();

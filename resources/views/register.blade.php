@@ -15,7 +15,7 @@
     <!-- Animate-css include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
-    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
 </head>
 
 <body>
@@ -39,11 +39,11 @@
                         class="d-flex flex-column gap-3 justify-content-center">
                         @csrf
 
-                        <input type="text" name="name" class="form-control py-2"
+                        <input type="text" name="name" class="form-control py-3"
                             style="text-align: left!important" placeholder="Full Name">
-                        <input type="text" name="email" class="form-control py-2"
+                        <input type="text" name="email" class="form-control py-3"
                             style="text-align: left!important" placeholder="Email Address">
-                        <input type="text" name="phone" class="form-control py-2"
+                        <input type="text" name="phone" class="form-control py-3"
                             style="text-align: left!important" placeholder="Phone Number">
 
                         <div class="d-flex gap-3 pt-5">

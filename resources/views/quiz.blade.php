@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/v3/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
 </head>
 
 <body>
@@ -121,10 +121,10 @@
                                         @else
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
-                                                id="nextBtn">Submit</button>
+                                                id="nextBtn">Next Question</button>
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
-                                                id="nextBtn">Next Question</button>
+                                                id="nextBtn">Submit</button>
                                         @endif
                                     </div>
                                 </div>

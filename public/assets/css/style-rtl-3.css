@@ -485,9 +485,30 @@ img {
     border-radius: 2rem;
 }
 
+.brand_img img {
+    width: 15rem !important;
+}
+
 .brand_2 {
     background: #fff;
     padding: 1.5rem 2rem;
+}
+
+.greetings_text_hero {
+    font-size: 4rem;
+    padding: 2rem 1rem;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    margin-bottom: 16px;
+    background-color: red;
+    background-image: linear-gradient(138deg, red, green);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-repeat: repeat;
+    background-size: 100%;
+    display: inline-block;
 }
 
 @-webkit-keyframes upDown {
@@ -829,8 +850,8 @@ button {
     }
 
     .greetings_text {
-        font-size: 5rem !important;
-        margin: 5rem 0 !important;
+        font-size: 6rem !important;
+        margin: 3rem 0 !important;
     }
 
     .result_img img {

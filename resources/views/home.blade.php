@@ -15,7 +15,7 @@
     <!-- Animate-css include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
-    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="row py-3 d-flex flex-column justify-content-evenly align-items-center">
-                <div class="col-12 col-sm-6 py-5">
+                <div class="col-12 py-5">
                     <div class="brand_img_wrapper">
                         <div class="brand_img">
                             <img src="{{ asset('/assets/images/brands/01.png') }}" alt="image-not-found"
@@ -70,6 +70,58 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 py-5">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <div class="brand_img">
+                                    <img src="{{ asset('/assets/images/brands/01.png') }}" alt="image-not-found"
+                                        style="width: 8rem;">
+                                </div>
+                            </div>
+                            <div class="brand_img">
+                                <img src="{{ asset('/assets/images/brands/02.png') }}" alt="image-not-found"
+                                    style="width: 8rem;">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="brand_img">
+                                    <img src="{{ asset('/assets/images/brands/03.png') }}" alt="image-not-found"
+                                        style="width: 8rem;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="brand_img">
+                                    <img src="{{ asset('/assets/images/brands/04.png') }}" alt="image-not-found"
+                                        style="width: 8rem;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="brand_img">
+                                    <img src="{{ asset('/assets/images/brands/05.png') }}" alt="image-not-found"
+                                        style="width: 8rem;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="brand_img">
+                                    <img src="{{ asset('/assets/images/brands/06.png') }}" alt="image-not-found"
+                                        style="width: 8rem;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="brand_img">
+                                    <img src="{{ asset('/assets/images/brands/07.png') }}" alt="image-not-found"
+                                        style="width: 8rem;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="brand_img">
+                                    <img src="{{ asset('/assets/images/brands/08.png') }}" alt="image-not-found"
+                                        style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-12 col-sm-6 text-center">
                     <a href="{{ route('register') }}"
                         class="js-btn-next f_btn text-white rounded-pill text-uppercase">Let's play the quiz</a>
@@ -77,6 +129,9 @@
             </div>
         </div>
     </div>
+
+    <script src="{{ asset('/assets/js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
 </body>
 
 </html>

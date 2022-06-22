@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/v3/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
 </head>
 
 <body>
@@ -46,8 +46,8 @@
                     <div class="form_content">
                         <div class="form_items radio-list">
                             <div class="text-center">
-                                <h3 class="text-center greetings_text text-white"
-                                    style="font-size: 2rem; padding: 2rem 0;">Congratulations!</h3>
+                                <h1 class="text-center greetings_text text-warning greetings_text_hero">Congratulations!
+                                </h1>
                                 <h4 class="text-center greetings_text">Your score is-</h4>
                                 <h1 class="text-center greetings_text">{{ $score }}</h1>
 
