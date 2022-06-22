@@ -15,7 +15,7 @@
     <!-- Animate-css include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
-    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-4.css') }}">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-3 d-flex flex-column justify-content-evenly align-items-center h-100">
+            <div class="row py-3 d-flex flex-column justify-content-evenly align-items-center brand_logo_wrapper">
                 <div class="col-12 py-5 d-block" id="gallery_one">
                     <div class="brand_img_wrapper">
                         <div class="brand_img">

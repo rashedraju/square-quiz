@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/v3/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-4.css') }}">
 
     <style>
         @keyframes confettiRain {

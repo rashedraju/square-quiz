@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('/assets/css/animate.min.css') }}">
     <!-- Main-StyleSheet include -->
     <link rel="stylesheet" href="{{ asset('/assets/css/v3/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-3.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style-rtl-4.css') }}">
 
     <style>
         @keyframes confettiRain {
@@ -87,8 +87,8 @@
                                         <img src='{{ asset("/assets/images/brands/{$qus->ans_img}") }}'>
                                     </div>
                                 @else
-                                    <h3 class="text-center">Sorry! Your Answer is incorrect.</h3>
-                                    <h4 class="text-center">The correct answer is-</h4>
+                                    <h3 class="text-center incorrect_lg">Sorry! Your Answer is incorrect.</h3>
+                                    <h4 class="text-center incorrect_lg">The correct answer is-</h4>
                                     <div class="result_img">
                                         <img src='{{ asset("/assets/images/brands/{$qus->ans_img}") }}'>
                                     </div>

@@ -735,6 +735,10 @@ button {
         -webkit-box-shadow: -10px 0 0px -2px #035cda;
         box-shadow: -10px 0 0px -2px #035cda;
     }
+
+    .greetings_text_hero {
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width: 399.98px) {
     .logo_area {
@@ -755,7 +759,7 @@ button {
     border-radius: 2rem;
 }
 
-@media screen and (min-width: 1079px) and (min-height: 1919px) {
+@media screen and (min-width: 1000px) and (min-height: 1900px) {
     .brand_1 {
         width: 10rem !important;
     }
@@ -771,6 +775,10 @@ button {
 
     .col-sm-6 {
         width: 100% !important;
+    }
+
+    .brand_logo_wrapper {
+        height: 80vh;
     }
 
     .brand_img img {
@@ -852,6 +860,11 @@ button {
     .greetings_text {
         font-size: 6rem !important;
         margin: 3rem 0 !important;
+    }
+
+    .incorrect_lg {
+        font-size: 4rem !important;
+        margin: 3rem 0;
     }
 
     .result_img img {
