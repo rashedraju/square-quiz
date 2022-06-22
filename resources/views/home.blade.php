@@ -20,7 +20,7 @@
 
 <body>
     <div class="wrapper position-relative">
-        <div class="container-lg" style="height: 100vh">
+        <div class="container-lg">
             <div class="row py-3 logo_wrapper">
                 <div class="col-12 d-flex justify-content-between">
                     <div class="logo_area">
@@ -33,96 +33,98 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-3 d-flex flex-column justify-content-evenly align-items-center">
-                <div class="col-12 py-5">
+            <div class="row py-3 d-flex flex-column justify-content-evenly align-items-center h-100">
+                <div class="col-12 py-5 d-block" id="gallery_one">
                     <div class="brand_img_wrapper">
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/01.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/1.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/02.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/2.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/03.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/3.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/04.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/4.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/05.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/5.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/06.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/6.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/07.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/7.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                         <div class="brand_img">
-                            <img src="{{ asset('/assets/images/brands/08.png') }}" alt="image-not-found"
+                            <img src="{{ asset('/assets/images/brands/8.png') }}" alt="image-not-found"
                                 style="width: 8rem;">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 py-5">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="col-12 py-5 d-none" style="height: 40%" id="gallery_two">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <div class="brand_img">
-                                    <img src="{{ asset('/assets/images/brands/01.png') }}" alt="image-not-found"
-                                        style="width: 8rem;">
+                            <div class="carousel-item text-center active">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/1.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
                                 </div>
                             </div>
-                            <div class="brand_img">
-                                <img src="{{ asset('/assets/images/brands/02.png') }}" alt="image-not-found"
-                                    style="width: 8rem;">
-                            </div>
-                            <div class="carousel-item">
-                                <div class="brand_img">
-                                    <img src="{{ asset('/assets/images/brands/03.png') }}" alt="image-not-found"
-                                        style="width: 8rem;">
+                            <div class="carousel-item text-center">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/2.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="brand_img">
-                                    <img src="{{ asset('/assets/images/brands/04.png') }}" alt="image-not-found"
-                                        style="width: 8rem;">
+                            <div class="carousel-item text-center">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/3.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="brand_img">
-                                    <img src="{{ asset('/assets/images/brands/05.png') }}" alt="image-not-found"
-                                        style="width: 8rem;">
+                            <div class="carousel-item text-center">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/4.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="brand_img">
-                                    <img src="{{ asset('/assets/images/brands/06.png') }}" alt="image-not-found"
-                                        style="width: 8rem;">
+                            <div class="carousel-item text-center">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/5.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="brand_img">
-                                    <img src="{{ asset('/assets/images/brands/07.png') }}" alt="image-not-found"
-                                        style="width: 8rem;">
+                            <div class="carousel-item text-center">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/6.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="brand_img">
-                                    <img src="{{ asset('/assets/images/brands/08.png') }}" alt="image-not-found"
-                                        style="width: 8rem;">
+                            <div class="carousel-item text-center">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/7.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <div class="brand_img d-inline-block">
+                                    <img src="{{ asset('/assets/images/brands/8.png') }}" alt="image-not-found"
+                                        class="d-block" style="width: unset!important">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 text-center">
+                <div class="col-12 col-sm-6 text-center pb">
                     <a href="{{ route('register') }}"
                         class="js-btn-next f_btn text-white rounded-pill text-uppercase">Let's play the quiz</a>
                 </div>
@@ -132,6 +134,30 @@
 
     <script src="{{ asset('/assets/js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
+
+    <script>
+        lastClick = 5;
+        var gallery_one = document.getElementById('gallery_one');
+        var gallery_two = document.getElementById('gallery_two');
+
+        document.addEventListener("click", function() {
+            lastClick = 5;
+            gallery_one.classList.remove('d-none')
+            gallery_one.classList.add('d-block')
+            gallery_two.classList.remove('d-block')
+            gallery_two.classList.add('d-none')
+        });
+
+        setInterval(() => {
+            if (lastClick <= 0) {
+                gallery_one.classList.remove('d-block')
+                gallery_one.classList.add('d-none')
+                gallery_two.classList.remove('d-none')
+                gallery_two.classList.add('d-block')
+            }
+            lastClick -= 1;
+        }, 1000);
+    </script>
 </body>
 
 </html>
