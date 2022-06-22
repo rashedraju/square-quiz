@@ -1,0 +1,58 @@
+.count_box {
+    width: 19rem;
+    height: 6.0625rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#2193b0),
+        to(#6dd5ed)
+    );
+    background: linear-gradient(to right, #ed213a, #93291e);
+}
+
+.count_clock img {
+    width: 3.125rem;
+}
+
+.count_title h4 {
+    color: #fff;
+    font-size: 1.375rem;
+}
+
+.count_title h5 {
+    color: #fff;
+}
+.count_title span {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.count_number {
+    width: 7rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count_number h3 {
+    color: #000a38;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 0.3rem;
+    margin-bottom: -0.3rem;
+}
+.count_number span {
+    color: #595959;
+    font-size: 1rem;
+    font-weight: 800;
+}
