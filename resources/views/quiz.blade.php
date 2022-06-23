@@ -117,11 +117,11 @@
                                         @if ($next_q == '')
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
-                                                id="nextBtn">Submit</button>
+                                                id="">Submit</button>
                                         @else
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
-                                                id="nextBtn">Next Question</button>
+                                                id="">Next Question</button>
                                             <button type="submit"
                                                 class="js-btn-next f_btn text-white rounded-pill text-uppercase"
                                                 id="nextBtn">Submit</button>
